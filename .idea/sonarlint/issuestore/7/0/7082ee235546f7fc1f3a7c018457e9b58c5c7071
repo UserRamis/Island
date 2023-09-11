@@ -1,0 +1,15 @@
+
+m
+java:S1104	"PMake name a static final constant or non-public and provide accessors if needed.(¿ğÅ¨8½È«°§1
+m
+java:S1104
+"PMake icon a static final constant or non-public and provide accessors if needed.(ŞŒ•¾8¾È«°§1
+o
+java:S1104"RMake weight a static final constant or non-public and provide accessors if needed.(Ãç“8¾È«°§1
+}
+java:S1104"[Make maximumQuantity a static final constant or non-public and provide accessors if needed.(á¾ê±úÿÿÿÿ8¾È«°§1
+s
+java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(í”Ñÿÿÿÿÿ8¾È«°§1
+t
+java:S1104"WMake maximumFood a static final constant or non-public and provide accessors if needed.(êåÏñ8¾È«°§1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äåçÏúÿÿÿÿ
