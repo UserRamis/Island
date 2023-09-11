@@ -7,14 +7,33 @@ import Factory.HerbivoresesCreator;
 import Factory.PredatorsCreator;
 import Model.Animal;
 import Model.Herbivoreses.Buffalo;
+import Model.Herbivoreses.Caterpillar;
+import Model.Herbivoreses.Deer;
+import Model.Herbivoreses.Duck;
+import Model.Herbivoreses.Goat;
+import Model.Herbivoreses.Horse;
+import Model.Herbivoreses.Mouse;
+import Model.Herbivoreses.Rabbit;
+import Model.Herbivoreses.Sheep;
+import Model.Herbivoreses.WildBoar;
 import Model.Plant;
 import Model.Plants.Grass;
 import Model.Predators.Wolf;
+import Model.Predators.Bear;
+import Model.Predators.BoaConstrictor;
+import Model.Predators.Eagle;
+import Model.Predators.Fox;
+
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.*;
 
 import java.util.ArrayList;
+
+import static Factory.Enums.HerbivoresTypes.*;
+import static Factory.Enums.PredatorsTypes.*;
 
 
 public class Square{
@@ -34,28 +53,44 @@ public class Square{
 
 
 
-    public static void createAnimal(int n)
-    {
-        for (int i = 0; i < n; i++)
-        {
-            AnimalTypes type=getRandomType(true);
+    public static void createAnimal(int n) {
+        for (int i = 0; i < n; i++) {
+            AnimalTypes type = getRandomType(true);
+            Animal predator = predatorsCreator.createAnimal(type);
+            predatorsList.add(predator);
+            animalCount.put(type, animalCount.getOrDefault(type, 0) + 1);
 
-            predatorsList.add(predatorsCreator.createAnimal(type));
+            // Вывести информацию о классе и поле maximumQuantity
+            Class<?> animalClass = type.getAnimalClass();
+            String className = animalClass.getSimpleName();
+            try {
+                Field maximumQuantityField = animalClass.getDeclaredField("maximumQuantity");
+                maximumQuantityField.setAccessible(true);
+                int maximumQuantityValue = maximumQuantityField.getInt(null); // Поле статическое, null для статических полей
 
-            animalCount.put(type,animalCount.getOrDefault(type,0)+1);
-            type=getRandomType(false);
-            herbivoresList.add(herbivoresesCreator.createAnimal(getRandomType(false)));
+                System.out.println("Created " + className + ", maximumQuantity: " + maximumQuantityValue);
+            } catch (NoSuchFieldException | IllegalAccessException e) {
+                e.printStackTrace();
+            }
 
-            animalCount.put(type,animalCount.getOrDefault(type,0)+1);
+
+
+            type=null;
+            type = getRandomType(false);
+            Animal herbivores = predatorsCreator.createAnimal(type);
+            herbivoresList.add(herbivoresesCreator.createAnimal(type));
+            animalCount.put(type, animalCount.getOrDefault(type, 0) + 1);
         }
     }
 
+
+
     public static AnimalTypes getRandomType(boolean isPredator)//выбираем хищника или травоядного
     {
-        AnimalTypes[] predatorTypes = {PredatorsTypes.BEAR, PredatorsTypes.BOACONSTRICTOR, PredatorsTypes.EAGLE,
+        AnimalTypes[] predatorTypes = {BEAR, PredatorsTypes.BOACONSTRICTOR, PredatorsTypes.EAGLE,
                 PredatorsTypes.FOX, PredatorsTypes.WOLF};
 
-        AnimalTypes[] herbivoreTypes = {HerbivoresTypes.BUFFALO, HerbivoresTypes.CATERPILLAR, HerbivoresTypes.DEER,
+        AnimalTypes[] herbivoreTypes = {BUFFALO, HerbivoresTypes.CATERPILLAR, HerbivoresTypes.DEER,
                 HerbivoresTypes.DUCK, HerbivoresTypes.GOAT, HerbivoresTypes.HORSE, HerbivoresTypes.MOUSE,
                 HerbivoresTypes.RABBIT, HerbivoresTypes.SHEEP, HerbivoresTypes.WILDBOAR};
 
@@ -80,6 +115,11 @@ public class Square{
     {
         return animalCount.getOrDefault(types,0);
     }
+
+
+
+
+
 }
 
 

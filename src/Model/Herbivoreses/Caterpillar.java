@@ -8,7 +8,7 @@ public class Caterpillar extends Herbivores {
     public String name= "Caterpillar";
     public String icon = "🐛";
     public int weight = 1;
-    public int maximumQuantity=1000;
+    public static int maximumQuantity=1000;
     public int speed=0;
     public int maximumFood=0;
 
@@ -21,7 +21,7 @@ public class Caterpillar extends Herbivores {
     }
 
     @Override
-    protected int maximumQuantity() {
+    protected  int maximumQuantity() {
         return maximumQuantity;
     }
 

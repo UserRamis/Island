@@ -8,7 +8,7 @@ public class Buffalo extends Herbivores {
     public String name= "Buffalo";
     public String icon = "🐃";
     public int weight = 700;
-    public int maximumQuantity=10;
+    public static int maximumQuantity=10;
     public int speed=3;
     public int maximumFood=100;
 

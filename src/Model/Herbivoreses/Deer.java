@@ -7,7 +7,7 @@ public class Deer extends Herbivores {
     public String name= "Deer";
     public String icon = "🦌";
     public int weight = 300;
-    public int maximumQuantity=20;
+    public static int  maximumQuantity=20;
     public int speed=3;
     public int maximumFood=50;
 
@@ -18,7 +18,7 @@ public class Deer extends Herbivores {
     }
 
     @Override
-    protected int maximumQuantity() {
+    protected  int maximumQuantity() {
         return maximumQuantity;
     }
 

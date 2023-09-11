@@ -8,7 +8,7 @@ public class Grass extends Plant
     public String name= "Grass";
     public String icon ="🌿";
     public int weight = 1;
-    public int maximumQuantity=200;
+    public static int maximumQuantity=200;
 
 
     @Override

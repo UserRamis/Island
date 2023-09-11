@@ -7,7 +7,7 @@ public class Bear extends Predator {
     public String name= "Bear";
     public String icon ="🐻";
     public int weight = 500;
-    public int maximumQuantity=5;
+    public static int maximumQuantity=5;
     public int speed=2;
     public int maximumFood=80;
 

@@ -9,7 +9,7 @@ public class WildBoar extends Herbivores {
     public String name= "WildBoar";
     public String icon = "🐗";
     public int weight = 50;
-    public int maximumQuantity=30;
+    public static int maximumQuantity=30;
     public int speed=2;
     public double maximumFood=15;
 

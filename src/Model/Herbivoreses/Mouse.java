@@ -7,7 +7,7 @@ public class Mouse extends Herbivores {
     public String name= "Mouse";
     public String icon = "🐁";
     public double weight = 0.05;
-    public int maximumQuantity=1;
+    public static int maximumQuantity=1;
     public int speed=3;
     public double maximumFood=0.02;
 

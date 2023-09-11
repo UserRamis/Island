@@ -9,7 +9,7 @@ public class Wolf extends Predator {
     public String name= "Wolf";
     public String icon = "🐺";
     public int weight = 50;
-    public int maximumQuantity=30;
+    public static int maximumQuantity=30;
     public int speed=3;
     public int maximumFood=8;
 

@@ -9,7 +9,7 @@ public class Duck extends Herbivores {
     public String name= "Duck";
     public String icon = "🦆";
     public int weight = 1;
-    public int maximumQuantity=200;
+    public static int maximumQuantity=200;
     public int speed=1;
     public int maximumFood=1;
 
