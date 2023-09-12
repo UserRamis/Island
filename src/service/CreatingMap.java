@@ -25,8 +25,9 @@ public class CreatingMap
             for (int j = 0; j <squareMap[i].length; j++)
             {
                 Square square=new Square();
-                square.createAnimal(random.nextInt(10));
-                square.createPlant(random.nextInt(10));
+                square.createPredatorAnimal(200);
+                square.createHerbivoresAnimal(200);
+                square.createPlant(100);
                 squareMap[i][j]=square;
                 System.out.println(squareMap[i][j]);
                 square=null;

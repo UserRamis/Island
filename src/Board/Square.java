@@ -6,59 +6,29 @@ import Factory.Enums.PredatorsTypes;
 import Factory.HerbivoresesCreator;
 import Factory.PredatorsCreator;
 import Model.Animal;
-import Model.Herbivoreses.Buffalo;
-import Model.Herbivoreses.Caterpillar;
-import Model.Herbivoreses.Deer;
-import Model.Herbivoreses.Duck;
-import Model.Herbivoreses.Goat;
-import Model.Herbivoreses.Horse;
-import Model.Herbivoreses.Mouse;
-import Model.Herbivoreses.Rabbit;
-import Model.Herbivoreses.Sheep;
-import Model.Herbivoreses.WildBoar;
 import Model.Plant;
 import Model.Plants.Grass;
-import Model.Predators.Wolf;
-import Model.Predators.Bear;
-import Model.Predators.BoaConstrictor;
-import Model.Predators.Eagle;
-import Model.Predators.Fox;
-
-
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.*;
-
 import java.util.ArrayList;
-
 import static Factory.Enums.HerbivoresTypes.*;
 import static Factory.Enums.PredatorsTypes.*;
 
-
 public class Square{
     private static final Random random = new Random();
-
     public static List<Animal> predatorsList=new ArrayList<>();
     public static List<Animal> herbivoresList=new ArrayList<>();
-
     public static List<Plant> plant=new ArrayList<>();
-
     public static HashMap<AnimalTypes,Integer> animalCount=new HashMap<>();
-
     public static PredatorsCreator predatorsCreator=new PredatorsCreator();
     public static HerbivoresesCreator herbivoresesCreator=new HerbivoresesCreator();
 
 
-
-
-
-    public static void createAnimal(int n) {
+    public static void createPredatorAnimal(int n)
+    {
         for (int i = 0; i < n; i++) {
             AnimalTypes type = getRandomType(true);
-            Animal predator = predatorsCreator.createAnimal(type);
-            predatorsList.add(predator);
-            animalCount.put(type, animalCount.getOrDefault(type, 0) + 1);
+            int maximumQuantityValue=0;
 
             // Вывести информацию о классе и поле maximumQuantity
             Class<?> animalClass = type.getAnimalClass();
@@ -66,20 +36,51 @@ public class Square{
             try {
                 Field maximumQuantityField = animalClass.getDeclaredField("maximumQuantity");
                 maximumQuantityField.setAccessible(true);
-                int maximumQuantityValue = maximumQuantityField.getInt(null); // Поле статическое, null для статических полей
+                maximumQuantityValue = maximumQuantityField.getInt(null); // Поле статическое, null для статических полей
 
-                System.out.println("Created " + className + ", maximumQuantity: " + maximumQuantityValue);
+
+                System.out.println("Created " + className + ", maximumQuantity: " + maximumQuantityValue+"количество их сейчас"+animalCount.get(type));
             } catch (NoSuchFieldException | IllegalAccessException e) {
                 e.printStackTrace();
             }
+            Integer animalCountValue = animalCount.get(type);
 
+            if (animalCountValue != null && maximumQuantityValue <= animalCountValue.intValue()) {
+                System.out.println("Увы, счетчик полный");
+            } else {
+                Animal predator = predatorsCreator.createAnimal(type);
+                predatorsList.add(predator);
+                animalCount.put(type, animalCountValue != null ? animalCountValue + 1 : 1);
+            }
+        }
+    }
 
+    public static void createHerbivoresAnimal(int n) {
+        for (int i = 0; i < n; i++) {
+            AnimalTypes type = getRandomType(false);
+            int maximumQuantityValue=0;
 
-            type=null;
-            type = getRandomType(false);
-            Animal herbivores = predatorsCreator.createAnimal(type);
-            herbivoresList.add(herbivoresesCreator.createAnimal(type));
-            animalCount.put(type, animalCount.getOrDefault(type, 0) + 1);
+            // Вывести информацию о классе и поле maximumQuantity
+            Class<?> animalClass = type.getAnimalClass();
+            String className = animalClass.getSimpleName();
+            try {
+                Field maximumQuantityField = animalClass.getDeclaredField("maximumQuantity");
+                maximumQuantityField.setAccessible(true);
+                maximumQuantityValue = maximumQuantityField.getInt(null); // Поле статическое, null для статических полей
+
+                System.out.println("Created " + className + ", maximumQuantity: " + maximumQuantityValue+"их количество сейчас "+animalCount.get(type));
+            } catch (NoSuchFieldException | IllegalAccessException e) {
+                e.printStackTrace();
+            }
+            Integer animalCountValue = animalCount.get(type);
+
+            if (animalCountValue != null && maximumQuantityValue <= animalCountValue.intValue()) {
+                System.out.println("Увы, счетчик полный");
+            } else {
+                Animal predator = herbivoresesCreator.createAnimal(type);
+                herbivoresList.add(predator);
+                animalCount.put(type, animalCountValue != null ? animalCountValue + 1 : 1);
+            }
         }
     }
 
@@ -115,11 +116,6 @@ public class Square{
     {
         return animalCount.getOrDefault(types,0);
     }
-
-
-
-
-
 }
 
 
