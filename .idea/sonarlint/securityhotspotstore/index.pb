@@ -132,3 +132,7 @@ Q.idea/sonarlint/securityhotspotstore/1/2/12948954db3f21814955d362cb7cf56323689a
 Q.idea/sonarlint/securityhotspotstore/2/f/2fa0aedab74bd5a39fe92881d0cbf1ac53a0d286,8\5\851909e2083bde1e8d98485b3ef5309f84e1704e
 Å
 Q.idea/sonarlint/securityhotspotstore/c/f/cff905b2ef9ccf794d18e5c3f0411f905614015f,9\c\9c2c680bbc2d7df6d87c89d5e7df09a19bd7b3b6
+G
+src/Model/Moveable.java,d\8\d8669769f2a0b5e12122db15840d3b6bce86a55b
+M
+src/service/MoveToTheMap.java,1\b\1b38c4581cafa916398d06049a217813c16b2752

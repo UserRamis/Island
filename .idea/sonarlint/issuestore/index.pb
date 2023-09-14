@@ -132,3 +132,7 @@ Q.idea/sonarlint/securityhotspotstore/c/f/cff905b2ef9ccf794d18e5c3f0411f90561401
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+G
+src/Model/Moveable.java,d\8\d8669769f2a0b5e12122db15840d3b6bce86a55b
+M
+src/service/MoveToTheMap.java,1\b\1b38c4581cafa916398d06049a217813c16b2752

@@ -1,5 +1,7 @@
 import Board.Square;
 import service.CreatingMap;
+import service.MoveToTheMap;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -28,7 +30,7 @@ public class Main {
         CreatingMap creatingMap=new CreatingMap(x,y);
 
         Square[][] map=creatingMap.Creating();//создали нашу карту с разными типами и кол-важивотными
-
+        new MoveToTheMap(map,10);
 
     }
 

@@ -2,11 +2,7 @@
 7
 java:S1220""Move this file to a named package.8áÏ‘„¨1
 A
-java:S1659"Declare "y" on a separate line.(†³§úÿÿÿÿÿ8ğÏ‘„¨1
-Y
-java:S1854"7Remove this useless assignment to local variable "map".(Ì•î—ûÿÿÿÿ8³˜„¨1
-L	java:S106"+Replace this use of System.out by a logger.(›å‡ëşÿÿÿÿ8õÏ‘„¨1
-G	java:S106"+Replace this use of System.out by a logger.(ıì·Ö8õÏ‘„¨1
-L	java:S106"+Replace this use of System.out by a logger.(“ã°ÿÿÿÿÿ8õÏ‘„¨1
-J
-java:S1481"(Remove this unused "map" local variable.(Ì•î—ûÿÿÿÿ8¹˜„¨1
+java:S1659"Declare "y" on a separate line.(†³§úÿÿÿÿÿ8ğÏ‘„¨1
+L	java:S106"+Replace this use of System.out by a logger.(›å‡ëşÿÿÿÿ8õÏ‘„¨1
+G	java:S106"+Replace this use of System.out by a logger.(ıì·Ö8õÏ‘„¨1
+L	java:S106"+Replace this use of System.out by a logger.(“ã°ÿÿÿÿÿ8õÏ‘„¨1

@@ -1,48 +1,18 @@
 
 Š
-java:S1319"hThe type of "animalCount" should be an interface such as "Map" rather than the implementation "HashMap".(èáˆÄşÿÿÿÿ8áìÀÔ¨1
+java:S1319"hThe type of "animalCount" should be an interface such as "Map" rather than the implementation "HashMap".(èáˆÄşÿÿÿÿ8¯àú€©1
 
-java:S1488g"bImmediately return this expression instead of assigning it to the temporary variable "randomType".(Ø¿¨8áìÀÔ¨1
-{
-java:S1104"YMake predatorsList a static final constant or non-public and provide accessors if needed.(‚ËÅÿÿÿÿÿ8åìÀÔ¨1
-|
-java:S1104"ZMake herbivoresList a static final constant or non-public and provide accessors if needed.(Ç¤Éóÿÿÿÿÿ8åìÀÔ¨1
-s
-java:S1104"QMake plant a static final constant or non-public and provide accessors if needed.(Ş¬Èûÿÿÿÿ8åìÀÔ¨1
+java:S1488W"bImmediately return this expression instead of assigning it to the temporary variable "randomType".(Ø¿¨8ÈÊÑş¨1
 y
-java:S1104"WMake animalCount a static final constant or non-public and provide accessors if needed.(èáˆÄşÿÿÿÿ8åìÀÔ¨1
-y
-java:S1104"\Make predatorsCreator a static final constant or non-public and provide accessors if needed.(ƒñİì8åìÀÔ¨1
-|
-java:S1104"_Make herbivoresesCreator a static final constant or non-public and provide accessors if needed.(Ø«÷ï8åìÀÔ¨1
-U
-java:S1444"3Make this "public static predatorsList" field final(‚ËÅÿÿÿÿÿ8åìÀÔ¨1
-V
-java:S1444"4Make this "public static herbivoresList" field final(Ç¤Éóÿÿÿÿÿ8åìÀÔ¨1
-M
-java:S1444"+Make this "public static plant" field final(Ş¬Èûÿÿÿÿ8åìÀÔ¨1
+java:S1104"WMake animalCount a static final constant or non-public and provide accessors if needed.(èáˆÄşÿÿÿÿ8²àú€©1
 S
-java:S1444"1Make this "public static animalCount" field final(èáˆÄşÿÿÿÿ8åìÀÔ¨1
-S
-java:S1444"6Make this "public static predatorsCreator" field final(ƒñİì8åìÀÔ¨1
-V
-java:S1444"9Make this "public static herbivoresesCreator" field final(Ø«÷ï8åìÀÔ¨1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ×÷éøÿÿÿÿ8æìÀÔ¨1
+java:S1444"1Make this "public static animalCount" field final(èáˆÄşÿÿÿÿ8²àú€©1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ×÷éøÿÿÿÿ8ËÊÑş¨1
 ?
-java:S2386"Make this member "protected".(‚ËÅÿÿÿÿÿ8íÀÔ¨1
+java:S2386"Make this member "protected".(èáˆÄşÿÿÿÿ8Èáú€©1
 ?
-java:S2386"Make this member "protected".(Ç¤Éóÿÿÿÿÿ8íÀÔ¨1
-?
-java:S2386"Make this member "protected".(Ş¬Èûÿÿÿÿ8íÀÔ¨1
-?
-java:S2386"Make this member "protected".(èáˆÄşÿÿÿÿ8íÀÔ¨1
-\
-java:S1118":Add a private constructor to hide the implicit public one.(«àÖ’øÿÿÿÿ8íÀÔ¨1
+java:S1118"Hide this public constructor.(Ü‰‡æşÿÿÿÿ8ØËÑş¨1
+X	java:S125#"<This block of commented-out lines of code should be removed.(À„†Ô8¤µèÿ¨1
 N
-java:S3011&",This accessibility update should be removed.(‹é®¥øÿÿÿÿ8§íÀÔ¨1
-L	java:S106*"+Replace this use of System.out by a logger.(Ø²·üÿÿÿÿ8·¨·Õ¨1
-G	java:S1061"+Replace this use of System.out by a logger.(Œ­ñ8·¨·Õ¨1
-N
-java:S3011D",This accessibility update should be removed.(‹é®¥øÿÿÿÿ8·¨·Õ¨1
-L	java:S106G"+Replace this use of System.out by a logger.(Šò›»øÿÿÿÿ8·¨·Õ¨1
-G	java:S106N"+Replace this use of System.out by a logger.(Œ­ñ8·¨·Õ¨1
+java:S3011=",This accessibility update should be removed.(‹é®¥øÿÿÿÿ8ğËÑş¨1
+]	java:S125?"<This block of commented-out lines of code should be removed.(Ú‹ Œûÿÿÿÿ8”’çÿ¨1

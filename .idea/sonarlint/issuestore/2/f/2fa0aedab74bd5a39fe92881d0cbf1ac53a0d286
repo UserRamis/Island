@@ -5,19 +5,13 @@ o
 java:S1104"MMake y a static final constant or non-public and provide accessors if needed.(ÔçÛþÿÿÿÿ8Ì¤Ô¨1
 o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÌ³‡þÿÿÿÿ8Ô¤Ô¨1
 \
-java:S1854!":Remove this useless assignment to local variable "square".(¼ÙÖ„úÿÿÿÿ8Ô¤Ô¨1
+java:S1854":Remove this useless assignment to local variable "square".(¼ÙÖ„úÿÿÿÿ8Ô¤Ô¨1
 I
 java:S1197",Move the array designators [][] to the type.(±ºÆõ8Ô¤Ô¨1
-C
-java:S2440"&Remove this instantiation of "Square".(ì¿÷Ã8Ô¤Ô¨1
-Q
-java:S2209"5Change this instance-reference to a static reference.(•°8Ô¤Ô¨1
-R
-java:S2209"5Change this instance-reference to a static reference.(¤›Œ„8ðããÔ¨1
-W
-java:S2209"5Change this instance-reference to a static reference.(žóô¶ýÿÿÿÿ8ðããÔ¨1
-G	java:S106 "+Replace this use of System.out by a logger.(þ¹ï¾8Ô¤Ô¨1
+H
+java:S2440"&Remove this instantiation of "Square".(ù–¨¼øÿÿÿÿ8Ô¤Ô¨1
+G	java:S106"+Replace this use of System.out by a logger.(þ¹ï¾8Ô¤Ô¨1
 F
-java:S1128")Remove this unused import 'Model.Animal'.(ˆÔÄÊ8ðããÔ¨1
+java:S1128")Remove this unused import 'Model.Animal'.(ˆÔÄÊ8óÍÝþ¨1
 N
-java:S1128",Remove this unused import 'Model.Organisms'.(ŸÂ‘Ëþÿÿÿÿ8ðããÔ¨1
+java:S1128",Remove this unused import 'Model.Organisms'.(ŸÂ‘Ëþÿÿÿÿ8óÍÝþ¨1
