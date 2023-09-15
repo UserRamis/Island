@@ -8,7 +8,7 @@ public class Goat extends Herbivores {
     public String icon = "🐐";
     public int weight = 60;
     public static int maximumQuantity=40;
-    public int speed=3;
+    public static int speed=3;
     public int maximumFood=10;
 
 

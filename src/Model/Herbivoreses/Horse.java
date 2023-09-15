@@ -8,7 +8,7 @@ public class Horse extends Herbivores {
     public String icon = "🐎";
     public int weight = 400;
     public static int maximumQuantity=20;
-    public int speed=4;
+    public static int speed=4;
     public int maximumFood=60;
 
 

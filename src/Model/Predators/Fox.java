@@ -10,7 +10,7 @@ public class Fox extends Predator {
     public String icon = "🦊";
     public int weight = 8;
     public  static int  maximumQuantity=30;
-    public int speed=2;
+    public static int speed=2;
     public int maximumFood=2;
 
     @Override

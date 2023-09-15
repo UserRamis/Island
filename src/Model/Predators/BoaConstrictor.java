@@ -5,11 +5,11 @@ import Model.Predator;
 public class BoaConstrictor extends Predator {
 
 
-    public String name= "BoaConstrictor";
-    public String icon = "🐍";
+    public  String name= "BoaConstrictor";
+    public  String icon = "🐍";
     public int weight = 400;
     public static int maximumQuantity=50;
-    public int speed=2;
+    public static int speed=2;
     public int maximumFood=50;
 
 

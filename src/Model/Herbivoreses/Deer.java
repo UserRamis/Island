@@ -8,7 +8,7 @@ public class Deer extends Herbivores {
     public String icon = "🦌";
     public int weight = 300;
     public static int  maximumQuantity=20;
-    public int speed=3;
+    public static int speed=3;
     public int maximumFood=50;
 
 

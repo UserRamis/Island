@@ -8,10 +8,12 @@ java:S1104
 "RMake weight a static final constant or non-public and provide accessors if needed.(†¸˜8¦â¢°§1
 w
 java:S1104"[Make maximumQuantity a static final constant or non-public and provide accessors if needed.(ÒºƒY8¦â¢°§1
-m
-java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(öÚL8¦â¢°§1
+s
+java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(ĞğàŸúÿÿÿÿ8¦â¢°§1
 t
 java:S1104"WMake maximumFood a static final constant or non-public and provide accessors if needed.(ò©„ù8¦â¢°§1
 Q
 java:S1444"5Make this "public static maximumQuantity" field final(ÒºƒY8¢í‚¯¨1
+M
+java:S1444"+Make this "public static speed" field final(ĞğàŸúÿÿÿÿ8Ïßù§©1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äåçÏúÿÿÿÿ8¦â¢°§1

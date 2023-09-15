@@ -4,12 +4,12 @@ import Model.Predator;
 
 public class Bear extends Predator {
 
-    public String name= "Bear";
-    public String icon ="🐻";
-    public int weight = 500;
+    public  String name= "Bear";
+    public  String icon ="🐻";
+    public  int weight = 500;
     public static int maximumQuantity=5;
-    public int speed=2;
-    public int maximumFood=80;
+    public static int speed=2;
+    public  int maximumFood=80;
 
     @Override
     protected int getWeight() {

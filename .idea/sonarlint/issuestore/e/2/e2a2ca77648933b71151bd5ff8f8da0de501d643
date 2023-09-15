@@ -8,12 +8,14 @@ o
 java:S1104"RMake weight a static final constant or non-public and provide accessors if needed.(Ãç“8¥ÌÑ°§1
 w
 java:S1104"[Make maximumQuantity a static final constant or non-public and provide accessors if needed.(ºñú8¥ÌÑ°§1
-m
-java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(öÚL8¥ÌÑ°§1
+s
+java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(ĞğàŸúÿÿÿÿ8¥ÌÑ°§1
 y
 java:S1104"WMake maximumFood a static final constant or non-public and provide accessors if needed.(–ª”×ùÿÿÿÿ8¥ÌÑ°§1
 Q
 java:S1444"5Make this "public static maximumQuantity" field final(ºñú8ñ¯¨1
+M
+java:S1444"+Make this "public static speed" field final(ĞğàŸúÿÿÿÿ8íÛı§©1
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±³ÉÏúÿÿÿÿ
 G
 java:S1128"+Remove this unused import 'Model.Predator'.(Îµ¹8Š¾ÿ§¨1

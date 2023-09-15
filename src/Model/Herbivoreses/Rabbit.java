@@ -8,7 +8,7 @@ public class Rabbit extends Herbivores {
     public String icon = "🐁";
     public int weight = 2;
     public static int maximumQuantity=150;
-    public int speed=2;
+    public static int speed=2;
     public double maximumFood=0.45;
 
 

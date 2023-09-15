@@ -9,7 +9,7 @@ public class Eagle extends Predator {
     public String icon = "🦅";
     public int weight = 6;
     public static int maximumQuantity=20;
-    public int speed=3;
+    public static int speed=3;
     public int maximumFood=1;
 
     @Override

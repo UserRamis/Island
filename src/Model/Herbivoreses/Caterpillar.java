@@ -9,7 +9,7 @@ public class Caterpillar extends Herbivores {
     public String icon = "🐛";
     public int weight = 1;
     public static int maximumQuantity=1000;
-    public int speed=0;
+    public static int speed=0;
     public int maximumFood=0;
 
 
