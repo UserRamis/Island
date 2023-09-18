@@ -26,8 +26,6 @@ public class CreatingMap
             {
                 Square square=new Square(5);
                 squareMap[i][j]=square;
-                System.out.println(squareMap[i][j]);
-                square=null;
             }
         }
         return squareMap;

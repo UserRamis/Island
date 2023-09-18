@@ -30,7 +30,8 @@ public class Main {
         CreatingMap creatingMap=new CreatingMap(x,y);
 
         Square[][] map=creatingMap.Creating();//создали нашу карту с разными типами и кол-важивотными
-        new MoveToTheMap(map,10);
+        System.out.println("Карта с животными "+x+" на "+y+" создана");
+        new MoveToTheMap(map,2);
 
     }
 
