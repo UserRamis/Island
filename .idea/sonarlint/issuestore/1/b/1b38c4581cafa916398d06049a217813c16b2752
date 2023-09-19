@@ -1,72 +1,17 @@
 
-w
-java:S11920"ZDefine a constant instead of duplicating this literal " Ñ‚ĞµĞ¿ĞµÑ€ÑŒ Ğ·Ğ´ĞµÑÑŒ " 4 times.(’©ßø8Æ³ë€ª1
-u
-java:S1192Y"XDefine a constant instead of duplicating this literal "ĞŸĞµÑ€ĞµĞ¼ĞµÑÑ‚Ğ¸Ğ»Ğ¸ " 4 times.(Æ‘ê¨8Æ³ë€ª1
-s
-java:S1192\"VDefine a constant instead of duplicating this literal "ĞĞµĞ²Ğ¾Ğ·Ğ¼Ğ¾Ğ¶Ğ½Ğ¾!" 4 times.(ê¤‡Í8Æ³ë€ª1
-m
-java:S11920"PDefine a constant instead of duplicating this literal "Ğ£Ğ´Ğ°Ğ»Ğ¸Ğ»Ğ¸ " 4 times.(’©ßø8Æ³ë€ª1
+e
+java:S6208+"CMerge the previous cases into this one using comma-separated label.(µ»ïşıÿÿÿÿ8Òÿ‘Êª1
 t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(¨ÖË¥ùÿÿÿÿ8Ğ³ë€ª1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¨ÖË¥ùÿÿÿÿ8äÿ‘Êª1
 W
-java:S2209"5Change this instance-reference to a static reference.(£¡öşûÿÿÿÿ8Ğ³ë€ª1
+java:S2209"5Change this instance-reference to a static reference.(£¡öşûÿÿÿÿ8éÿ‘Êª1
 N
-java:S3011"",This accessibility update should be removed.(Ñ‘”§ÿÿÿÿÿ8Õ³ë€ª1
-G	java:S106$"+Replace this use of System.out by a logger.(¸Íò8Õ³ë€ª1
-C	java:S131+""Add a default case to this switch.(éîÃÑüÿÿÿÿ8Õ³ë€ª1
+java:S3011",This accessibility update should be removed.(Ñ‘”§ÿÿÿÿÿ8éÿ‘Êª1
+C	java:S131&""Add a default case to this switch.(éîÃÑüÿÿÿÿ8éÿ‘Êª1
 W
-java:S2209/"5Change this instance-reference to a static reference.(±Õ’ııÿÿÿÿ8Õ³ë€ª1
-G	java:S1060"+Replace this use of System.out by a logger.(’©ßø8Õ³ë€ª1
+java:S22090"5Change this instance-reference to a static reference.(±Õ’ııÿÿÿÿ8éÿ‘Êª1
+L	java:S106:"+Replace this use of System.out by a logger.(ÓÃ±Äùÿÿÿÿ8éÿ‘Êª1
 R
-java:S22090"5Change this instance-reference to a static reference.(’©ßø8Õ³ë€ª1
-W
-java:S22094"5Change this instance-reference to a static reference.(±Õ’ııÿÿÿÿ8Õ³ë€ª1
-G	java:S1065"+Replace this use of System.out by a logger.(’©ßø8Õ³ë€ª1
+java:S2209B"5Change this instance-reference to a static reference.(ïüŸä8éÿ‘Êª1
 R
-java:S22095"5Change this instance-reference to a static reference.(’©ßø8Õ³ë€ª1
-W
-java:S22099"5Change this instance-reference to a static reference.(±Õ’ııÿÿÿÿ8Õ³ë€ª1
-G	java:S106:"+Replace this use of System.out by a logger.(’©ßø8Õ³ë€ª1
-R
-java:S2209:"5Change this instance-reference to a static reference.(’©ßø8Õ³ë€ª1
-W
-java:S2209>"5Change this instance-reference to a static reference.(±Õ’ııÿÿÿÿ8Õ³ë€ª1
-G	java:S106?"+Replace this use of System.out by a logger.(’©ßø8Õ³ë€ª1
-R
-java:S2209?"5Change this instance-reference to a static reference.(’©ßø8Õ³ë€ª1
-L	java:S106W"+Replace this use of System.out by a logger.(¨»ŸĞşÿÿÿÿ8Õ³ë€ª1
-W
-java:S2209W"5Change this instance-reference to a static reference.(¨»ŸĞşÿÿÿÿ8Õ³ë€ª1
-W
-java:S2209X"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8Õ³ë€ª1
-W
-java:S2209X"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8Õ³ë€ª1
-G	java:S106Y"+Replace this use of System.out by a logger.(Æ‘ê¨8Õ³ë€ª1
-R
-java:S2209Y"5Change this instance-reference to a static reference.(Æ‘ê¨8Õ³ë€ª1
-G	java:S106\"+Replace this use of System.out by a logger.(ê¤‡Í8Õ³ë€ª1
-W
-java:S2209e"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8Õ³ë€ª1
-W
-java:S2209e"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8Õ³ë€ª1
-G	java:S106f"+Replace this use of System.out by a logger.(Ã„Ò8Õ³ë€ª1
-R
-java:S2209f"5Change this instance-reference to a static reference.(Ã„Ò8Õ³ë€ª1
-G	java:S106i"+Replace this use of System.out by a logger.(ê¤‡Í8Õ³ë€ª1
-W
-java:S2209s"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8Õ³ë€ª1
-W
-java:S2209s"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8Õ³ë€ª1
-L	java:S106t"+Replace this use of System.out by a logger.(îÙØèüÿÿÿÿ8Õ³ë€ª1
-W
-java:S2209t"5Change this instance-reference to a static reference.(îÙØèüÿÿÿÿ8Õ³ë€ª1
-G	java:S106w"+Replace this use of System.out by a logger.(ê¤‡Í8Õ³ë€ª1
-X
-java:S2209"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8¨ì€ª1
-X
-java:S2209"5Change this instance-reference to a static reference.(ˆ’«ıÿÿÿÿ8¨ì€ª1
-H	java:S106‚"+Replace this use of System.out by a logger.(Ç”şÌ8¨ì€ª1
-S
-java:S2209‚"5Change this instance-reference to a static reference.(Ç”şÌ8¨ì€ª1
-H	java:S106…"+Replace this use of System.out by a logger.(ê¤‡Í8–íì€ª1
+java:S2209B"5Change this instance-reference to a static reference.(ïüŸä8éÿ‘Êª1

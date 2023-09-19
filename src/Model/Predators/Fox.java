@@ -43,18 +43,16 @@ public class Fox extends Predator {
         eatProbabilities.put(Caterpillar.class,40);
         eatProbabilities.put(Grass.class,0);
     }
-
-    public boolean tryToIt(Animal animal)
-    {
-        Integer probability=eatProbabilities.get(animal);
-        if(probability!=null)
-        {
-            willEat(probability);
+    @Override
+    public boolean tryToIt(Animal animal) {
+        Integer probability = eatProbabilities.get(animal.getClass());
+        if (probability != null) {
+            return willEat(probability);
         }
         return false;
     }
-
-    public boolean willEat(int probability)
+    @Override
+    public  boolean willEat(int probability)
     {
         int randomValue= ThreadLocalRandom.current().nextInt(100);
         return randomValue<probability;

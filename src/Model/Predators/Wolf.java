@@ -43,17 +43,16 @@ public class Wolf extends Predator {
         eatProbabilities.put(Grass.class,0);
     }
 
-    public boolean tryToIt(Animal animal)
-    {
-        Integer probability=eatProbabilities.get(animal);
-        if(probability!=null)
-        {
-            willEat(probability);
-        }
-        return false;
+@Override
+public boolean tryToIt(Animal animal) {
+    Integer probability = eatProbabilities.get(animal.getClass());
+    if (probability != null) {
+        return willEat(probability);
     }
-
-    public boolean willEat(int probability)
+    return false;
+}
+@Override
+    public  boolean willEat(int probability)
     {
         int randomValue= ThreadLocalRandom.current().nextInt(100);
         return randomValue<probability;

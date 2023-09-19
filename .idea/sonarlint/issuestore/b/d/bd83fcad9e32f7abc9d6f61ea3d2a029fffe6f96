@@ -1,20 +1,26 @@
 
 m
-java:S1104"PMake name a static final constant or non-public and provide accessors if needed.(ŞÓš8‡“ÿ®¨1
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.(ŞÓš8‡“ÿ®¨1
 l
-java:S1104"PMake icon a static final constant or non-public and provide accessors if needed.(²²•*8‡“ÿ®¨1
+java:S1104"PMake icon a static final constant or non-public and provide accessors if needed.(²²•*8‡“ÿ®¨1
 t
-java:S1104	"RMake weight a static final constant or non-public and provide accessors if needed.(±ú¼ùÿÿÿÿ8‡“ÿ®¨1
+java:S1104"RMake weight a static final constant or non-public and provide accessors if needed.(±ú¼ùÿÿÿÿ8‡“ÿ®¨1
 }
-java:S1104
-"[Make maximumQuantity a static final constant or non-public and provide accessors if needed.(÷ÇŠşÿÿÿÿ8‡“ÿ®¨1
+java:S1104"[Make maximumQuantity a static final constant or non-public and provide accessors if needed.(÷ÇŠşÿÿÿÿ8‡“ÿ®¨1
 n
-java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(²´¸›8‡“ÿ®¨1
+java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(²´¸›8‡“ÿ®¨1
 t
-java:S1104"WMake maximumFood a static final constant or non-public and provide accessors if needed.(ò©„ù8‡“ÿ®¨1
+java:S1104"WMake maximumFood a static final constant or non-public and provide accessors if needed.(ò©„ù8‡“ÿ®¨1
+y
+java:S1104"\Make eatProbabilities a static final constant or non-public and provide accessors if needed.(£ÈÖ•8”Œ©Íª1
 W
-java:S1444
-"5Make this "public static maximumQuantity" field final(÷ÇŠşÿÿÿÿ8‡“ÿ®¨1
+java:S1444"5Make this "public static maximumQuantity" field final(÷ÇŠşÿÿÿÿ8‡“ÿ®¨1
 H
-java:S1444"+Make this "public static speed" field final(²´¸›8Ì”ü§©1
+java:S1444"+Make this "public static speed" field final(²´¸›8Ì”ü§©1
+S
+java:S1444"6Make this "public static eatProbabilities" field final(£ÈÖ•8”Œ©Íª1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±³ÉÏúÿÿÿÿ8‡“ÿ®¨1
+:
+java:S2386"Make this member "protected".(£ÈÖ•8•Œ©Íª1
+a
+java:S2175."DA "Map<Class, Integer>" cannot contain a "Animal" in a "Class" type.(—Áı8å€Îª1

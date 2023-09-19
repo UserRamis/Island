@@ -1,19 +1,26 @@
 
 r
-java:S1104"PMake name a static final constant or non-public and provide accessors if needed.(ÂÕŞ“ùÿÿÿÿ8ªåµ°§1
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.(ÂÕŞ“ùÿÿÿÿ8ÛÂşÍª1
 m
-java:S1104	"PMake icon a static final constant or non-public and provide accessors if needed.(¨û”ä8ªåµ°§1
+java:S1104"PMake icon a static final constant or non-public and provide accessors if needed.(¨û”ä8ÛÂşÍª1
 n
-java:S1104
-"RMake weight a static final constant or non-public and provide accessors if needed.(ƒâ¤/8ªåµ°§1
+java:S1104"RMake weight a static final constant or non-public and provide accessors if needed.(ƒâ¤/8ÛÂşÍª1
 x
-java:S1104"[Make maximumQuantity a static final constant or non-public and provide accessors if needed.(“üœï8ªåµ°§1
+java:S1104"[Make maximumQuantity a static final constant or non-public and provide accessors if needed.(“üœï8ÛÂşÍª1
 s
-java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(¾€½öùÿÿÿÿ8ªåµ°§1
+java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(¾€½öùÿÿÿÿ8ÛÂşÍª1
 y
-java:S1104"WMake maximumFood a static final constant or non-public and provide accessors if needed.(üàƒ…ùÿÿÿÿ8ªåµ°§1
+java:S1104"WMake maximumFood a static final constant or non-public and provide accessors if needed.(üàƒ…ùÿÿÿÿ8ÛÂşÍª1
+y
+java:S1104"\Make eatProbabilities a static final constant or non-public and provide accessors if needed.(£ÈÖ•8ÛÂşÍª1
 R
-java:S1444"5Make this "public static maximumQuantity" field final(“üœï8„–ş®¨1
+java:S1444"5Make this "public static maximumQuantity" field final(“üœï8ÛÂşÍª1
 M
-java:S1444"+Make this "public static speed" field final(¾€½öùÿÿÿÿ8ãúû§©1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±³ÉÏúÿÿÿÿ8«åµ°§1
+java:S1444"+Make this "public static speed" field final(¾€½öùÿÿÿÿ8ÛÂşÍª1
+S
+java:S1444"6Make this "public static eatProbabilities" field final(£ÈÖ•8ÛÂşÍª1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±³ÉÏúÿÿÿÿ8ÜÂşÍª1
+:
+java:S2386"Make this member "protected".(£ÈÖ•8ßÂşÍª1
+a
+java:S2175/"DA "Map<Class, Integer>" cannot contain a "Animal" in a "Class" type.(—Áı8èÂşÍª1

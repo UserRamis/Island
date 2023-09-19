@@ -1,10 +1,12 @@
 import Board.Square;
 import service.CreatingMap;
+import service.EatingToTheMap;
 import service.MoveToTheMap;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.concurrent.ThreadLocalRandom;
 
 
 public class Main {
@@ -32,6 +34,10 @@ public class Main {
         Square[][] map=creatingMap.Creating();//создали нашу карту с разными типами и кол-важивотными
         System.out.println("Карта с животными "+x+" на "+y+" создана");
         new MoveToTheMap(map,2);
+        new EatingToTheMap(map,2);
+
+
+
 
     }
 
