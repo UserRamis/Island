@@ -42,8 +42,8 @@ public class Caterpillar extends Herbivores {
         eatProbabilities.put(Grass.class,100);
     }
     @Override
-    public boolean tryToIt(Animal animal) {
-        Integer probability = eatProbabilities.get(animal.getClass());
+    public boolean tryToIt(Organisms organisms) {
+        Integer probability = eatProbabilities.get(organisms.getClass());
         if (probability != null) {
             return willEat(probability);
         }

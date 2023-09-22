@@ -41,8 +41,8 @@ public class Bear extends Predator {
         eatProbabilities.put(Grass.class,0);
     }
     @Override
-    public boolean tryToIt(Animal animal) {
-        Integer probability = eatProbabilities.get(animal.getClass());
+    public boolean tryToIt(Organisms organismsl) {
+        Integer probability = eatProbabilities.get(organismsl.getClass());
         if (probability != null) {
             return willEat(probability);
         }

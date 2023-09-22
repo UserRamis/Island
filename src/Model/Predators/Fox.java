@@ -44,8 +44,8 @@ public class Fox extends Predator {
         eatProbabilities.put(Grass.class,0);
     }
     @Override
-    public boolean tryToIt(Animal animal) {
-        Integer probability = eatProbabilities.get(animal.getClass());
+    public boolean tryToIt(Organisms organisms) {
+        Integer probability = eatProbabilities.get(organisms.getClass());
         if (probability != null) {
             return willEat(probability);
         }

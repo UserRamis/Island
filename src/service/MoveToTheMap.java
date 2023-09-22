@@ -2,6 +2,9 @@ package service;
 
 import Board.Square;
 import Factory.Enums.AnimalTypes;
+import Factory.Enums.GrassTypes;
+import Model.Plants.Grass;
+
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Random;
@@ -23,6 +26,7 @@ public MoveToTheMap(Square[][] squareMap, int time)
                 final int finalI = i;
                 final int finalJ = j;
                 animalCountMap.forEach((key, value) -> {
+
                     int animalSpeed=0;
                     Class<?> animalClass = key.getAnimalClass();
                     try {

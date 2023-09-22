@@ -1,5 +1,6 @@
 package Board;
 import Factory.Enums.AnimalTypes;
+import Factory.Enums.GrassTypes;
 import Factory.Enums.HerbivoresTypes;
 import Factory.Enums.PredatorsTypes;
 import Factory.HerbivoresesCreator;
@@ -12,6 +13,8 @@ import java.util.*;
 import java.util.ArrayList;
 import static Factory.Enums.HerbivoresTypes.*;
 import static Factory.Enums.PredatorsTypes.*;
+import Factory.Enums.GrassTypes;
+
 
 public class Square{
     private static final Random random = new Random();
@@ -23,33 +26,34 @@ public class Square{
     private static final HerbivoresesCreator herbivoresesCreator=new HerbivoresesCreator();
 
 
-    public Square(int n)
-    {
-
-        for (int i = 0; i <n ; i++) {
-            createPlant(n);
-            AnimalTypes type = getRandomType(true);
+    public Square(int n) {
+        for (int i = 0; i < n; i++) {
+            createPlant();
+            boolean randomBoolean = random.nextBoolean();
+            AnimalTypes type = getRandomType(randomBoolean);
+            //System.out.println(type + " создан");
             int maximumQuantityPredatorValue = getMaximumQuantityValue(type);//ограничение животных класса
             Integer animalCountValue = animalCount.get(type);//мапа счетчик с животными
             if (animalCountValue != null && maximumQuantityPredatorValue <= animalCountValue.intValue()) {
-                //System.out.println("Увы, счетчик полный");
+                // Счетчик полный
             } else {
-                    if(type instanceof PredatorsTypes)
-                    {
-                        createPredatorAnimal(type,animalCountValue);
-                    }
-                    else {
-                        createHerbivoresAnimal(type,animalCountValue);
-                    }
+                if (type instanceof PredatorsTypes) {
+                    createPredatorAnimal(type);
+                } else {
+                    createHerbivoresAnimal(type);
+                }
             }
         }
+
+
+
     }
 
-    public static void createPredatorAnimal(AnimalTypes type,Integer animalCountValue)
-    {
-                Animal predator = predatorsCreator.createAnimal(type);
-                predatorsList.add(predator);
-                animalCount.put(type, animalCountValue != null ? animalCountValue + 1 : 1);
+    public static void createPredatorAnimal(AnimalTypes type) {
+        Animal predator = predatorsCreator.createAnimal(type);
+        predatorsList.add(predator);
+        animalCount.put(type, animalCount.get(type) != null ? animalCount.get(type) + 1 : 1);
+        //System.out.println("животное "+type +" записано!");
     }
 
     public static int getMaximumQuantityValue(AnimalTypes type)
@@ -67,14 +71,14 @@ public class Square{
         return maximumQuantityValue;
     }
 
-    public static void createHerbivoresAnimal(AnimalTypes type,Integer animalCountValue) {
-                Animal predator = herbivoresesCreator.createAnimal(type);
-                herbivoresList.add(predator);
-                animalCount.put(type, animalCountValue != null ? animalCountValue + 1 : 1);
+    public static void createHerbivoresAnimal(AnimalTypes type) {
+        Animal herbivore = herbivoresesCreator.createAnimal(type);
+        herbivoresList.add(herbivore);
+        animalCount.put(type, animalCount.get(type) != null ? animalCount.get(type) + 1 : 1);
+        //System.out.println("животное "+type +" записано!");
     }
 
-    public static AnimalTypes getRandomType(boolean isPredator)//выбираем хищника или травоядного
-    {
+    public static AnimalTypes getRandomType(boolean isPredator) {
         AnimalTypes[] predatorTypes = {BEAR, PredatorsTypes.BOACONSTRICTOR, PredatorsTypes.EAGLE,
                 PredatorsTypes.FOX, PredatorsTypes.WOLF};
 
@@ -82,17 +86,20 @@ public class Square{
                 HerbivoresTypes.DUCK, HerbivoresTypes.GOAT, HerbivoresTypes.HORSE, HerbivoresTypes.MOUSE,
                 HerbivoresTypes.RABBIT, HerbivoresTypes.SHEEP, HerbivoresTypes.WILDBOAR};
 
-        AnimalTypes[] selectedTypes = isPredator ? predatorTypes : herbivoreTypes;
-        int randomIndex = random.nextInt(selectedTypes.length);
-        AnimalTypes randomType = selectedTypes[randomIndex];
+        AnimalTypes[] allTypes = isPredator ? predatorTypes : herbivoreTypes;
+        int randomIndex = random.nextInt(allTypes.length);
+        AnimalTypes randomType = allTypes[randomIndex];
         return randomType;
     }
 
-    public static void createPlant(int n)
+
+    public static void createPlant()
     {
-        for (int i = 0; i < n; i++) {
+
             plant.add(new Grass());
-        }
+
+        animalCount.put(GrassTypes.GRASS, plant.size() != 0 ? plant.size() + 1 : 1);
+        //System.out.println("трава создана");
     }
 }
 

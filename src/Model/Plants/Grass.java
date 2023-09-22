@@ -9,7 +9,7 @@ public class Grass extends Plant
     public String icon ="🌿";
     public int weight = 1;
     public static int maximumQuantity=200;
-
+    public static int speed=0;
 
     @Override
     protected int getWeight() {
