@@ -68,10 +68,10 @@ public class EatingToTheMap {
                                 if(m==true)
                                 {
                                     animalCountMap.put(randomType,animalCountMap.get(randomType)-1);
-                                    System.out.println("Животное "+randomAnimalInstance +" было сьедено и удалено!");
+                                    //System.out.println("Животное "+randomAnimalInstance +" было сьедено и удалено!");
                                 }
-                                System.out.println("Сьест ли животное "+ animalClass +" траву? "+mgracc);
-                                System.out.println("Животное "+animalClass +" ест животного "+randomType+"  "+m);
+                                //System.out.println("Сьест ли животное "+ animalClass +" траву? "+mgracc);
+                                //System.out.println("Животное "+animalClass +" ест животного "+randomType+"  "+m);
                             }
 
 
@@ -81,7 +81,7 @@ public class EatingToTheMap {
                             e.printStackTrace();
                         }
                     }
-                    else System.out.println("Животного "+key+" нет!");
+                    //else System.out.println("Животного "+key+" нет!");
 
 
                 });

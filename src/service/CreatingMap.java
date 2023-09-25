@@ -17,14 +17,14 @@ public class CreatingMap
         this.y=y;
     }
 
-    public Square[][] Creating()
+    public Square[][] Creating(int n)
     {
         Square squareMap[][]=new Square[x][y];
         for (int i = 0; i < squareMap.length; i++)
         {
             for (int j = 0; j <squareMap[i].length; j++)
             {
-                Square square=new Square(5);
+                Square square=new Square(n);
                 squareMap[i][j]=square;
             }
         }

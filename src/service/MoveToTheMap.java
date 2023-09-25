@@ -63,7 +63,7 @@ public MoveToTheMap(Square[][] squareMap)
 
 
     }
-    System.out.println("Животные перешли на другие клетки!");
+    //System.out.println("Животные перешли на другие клетки!");
 }
 
     public Square[][] getUpdatedMap() {

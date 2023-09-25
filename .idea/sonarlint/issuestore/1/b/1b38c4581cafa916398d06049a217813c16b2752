@@ -1,21 +1,25 @@
 
 e
-java:S6208/"CMerge the previous cases into this one using comma-separated label.(µ»ïþýÿÿÿÿ8ž¡Âä«1
+java:S62081"CMerge the previous cases into this one using comma-separated label.(µ»ïþýÿÿÿÿ8Ö¼‘Þ¬1
+O
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8Ú¼‘Þ¬1
 t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¨ÖË¥ùÿÿÿÿ8©¡Âä«1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(öÄò¬ùÿÿÿÿ8˜½‘Þ¬1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ÿ÷£8˜½‘Þ¬1
 W
-java:S2209"5Change this instance-reference to a static reference.(£¡öþûÿÿÿÿ8ª¡Âä«1
+java:S2209"5Change this instance-reference to a static reference.(£¡öþûÿÿÿÿ8˜½‘Þ¬1
 N
-java:S3011"",This accessibility update should be removed.(Ñ‘”§ÿÿÿÿÿ8ª¡Âä«1
-C	java:S131*""Add a default case to this switch.(éîÃÑüÿÿÿÿ8«¡Âä«1
+java:S3011$",This accessibility update should be removed.(Ñ‘”§ÿÿÿÿÿ8˜½‘Þ¬1
+C	java:S131,""Add a default case to this switch.(éîÃÑüÿÿÿÿ8˜½‘Þ¬1
 W
-java:S22094"5Change this instance-reference to a static reference.(±Õ’ýýÿÿÿÿ8«¡Âä«1
-L	java:S106>"+Replace this use of System.out by a logger.(ÓÃ±Äùÿÿÿÿ8«¡Âä«1
+java:S22096"5Change this instance-reference to a static reference.(±Õ’ýýÿÿÿÿ8˜½‘Þ¬1
+X	java:S125>"<This block of commented-out lines of code should be removed.(®õß­8˜½‘Þ¬1
+L	java:S106B"+Replace this use of System.out by a logger.(ÓÃ±Äùÿÿÿÿ8˜½‘Þ¬1
 R
-java:S2209F"5Change this instance-reference to a static reference.(ïüŸä8¬¡Âä«1
+java:S2209P"5Change this instance-reference to a static reference.(ïüŸä8˜½‘Þ¬1
 R
-java:S2209F"5Change this instance-reference to a static reference.(ïüŸä8¬¡Âä«1
+java:S2209P"5Change this instance-reference to a static reference.(ïüŸä8óÞœÞ¬1
 W
-java:S1128"5Remove this unused import 'Factory.Enums.GrassTypes'.(ÚŽ‡Ùûÿÿÿÿ8¬¡Âä«1
+java:S1128"5Remove this unused import 'Factory.Enums.GrassTypes'.(ÚŽ‡Ùûÿÿÿÿ8˜½‘Þ¬1
 Q
-java:S1128"/Remove this unused import 'Model.Plants.Grass'.(¦ÏÙžþÿÿÿÿ8Ð„Íä«1
+java:S1128"/Remove this unused import 'Model.Plants.Grass'.(¦ÏÙžþÿÿÿÿ8˜½‘Þ¬1
