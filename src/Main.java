@@ -1,4 +1,5 @@
 import Board.Square;
+import Factory.Enums.AnimalTypes;
 import service.CreatingMap;
 import service.EatingToTheMap;
 import service.MoveToTheMap;
@@ -6,6 +7,7 @@ import service.MoveToTheMap;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
 
@@ -13,6 +15,8 @@ public class Main {
 
     private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     private static int x,y;
+
+    static Square[][] map;
     public static void main(String[] args) {
 
         try {
@@ -31,16 +35,16 @@ public class Main {
 
         CreatingMap creatingMap=new CreatingMap(x,y);
 
-        Square[][] map=creatingMap.Creating();//создали нашу карту с разными типами и кол-важивотными
+        map=creatingMap.Creating();//создали нашу карту с разными типами и кол-важивотными
         System.out.println("Карта с животными "+x+" на "+y+" создана");
 
-        //MoveToTheMap moveToTheMap=new MoveToTheMap(map,2);
+
+        for (int i = 0; i < 100; i++) {
+            new EatingToTheMap(map, 5);
+            new MoveToTheMap(map);
+        }
 
 
-
-
-        //new MoveToTheMap(map,2);
-        new EatingToTheMap(map,2);
 
 
 

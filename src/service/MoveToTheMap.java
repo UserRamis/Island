@@ -12,10 +12,12 @@ import java.util.Random;
 public class MoveToTheMap
 {
     Random random=new Random();
+    private Square[][] squareMap;
 
-public MoveToTheMap(Square[][] squareMap, int time)
+public MoveToTheMap(Square[][] squareMap)
 {
-    while (time!=0)
+    this.squareMap=squareMap;
+    //while (time!=0)
     {
         for (int i = 0; i < squareMap.length; i++)
         {
@@ -47,7 +49,7 @@ public MoveToTheMap(Square[][] squareMap, int time)
                             case 4:
                                 int cellsToMove=randomSpeed;
                                 movementByCell(key,squareMap,finalI,finalJ,cellsToMove);
-                                if(value>0)
+                                if(value>1)
                                 {
                                     square.animalCount.put(key,value-1);
                                 }
@@ -57,17 +59,26 @@ public MoveToTheMap(Square[][] squareMap, int time)
                 });
             }
         }
-        time--;
+       // time--;
+
+
     }
     System.out.println("Животные перешли на другие клетки!");
 }
 
-private static void movementByCell(AnimalTypes types,Square[][] squareMap,int i,int j, int cells)
-{
-    if(j+cells<squareMap[i].length)
-    {
-        Square square=squareMap[i][j+cells];
-        square.animalCount.put(types,square.animalCount.getOrDefault(types,0)+1);
+    public Square[][] getUpdatedMap() {
+        return squareMap;
     }
-}
+
+    private static void movementByCell(AnimalTypes types, Square[][] squareMap, int i, int j, int cells) {
+        if (j + cells < squareMap[i].length) {
+            int newI = i; // Новая переменная для i
+            if (i + cells < squareMap.length) {
+                newI = i + cells;
+            }
+            Square square = squareMap[newI][j + cells];
+            square.animalCount.put(types, square.animalCount.getOrDefault(types, 0) + 1);
+        }
+    }
+
 }

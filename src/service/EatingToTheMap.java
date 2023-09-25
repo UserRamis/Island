@@ -21,16 +21,12 @@ import static Factory.Enums.PredatorsTypes.BEAR;
 public class EatingToTheMap {
 
    private static Random random=new Random(100);
+    private Square[][] squareMap;
 
     public EatingToTheMap(Square[][] squareMap, int time)
     {
 
-
-
-
-
-
-
+        this.squareMap=squareMap;
 
         for (int i = 0; i < squareMap.length; i++)
         {

@@ -22,3 +22,5 @@ java:S1444"6Make this "public static eatProbabilities" field final(£ÈÖ•8‰¿‘Íª
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äåçÏúÿÿÿÿ8ùô¤°§1
 :
 java:S2386"Make this member "protected".(£ÈÖ•8¿‘Íª1
+F
+java:S1128")Remove this unused import 'Model.Animal'.(ˆÔÄÊ8½•İô«1
